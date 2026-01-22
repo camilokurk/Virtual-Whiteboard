@@ -26,10 +26,7 @@ while True:
 
     resultado = manos.process(imgRGB)
 
-    rojo = cv2.circle(img, (50, 50), 25, (0, 0, 255), cv2.FILLED)
-
-    def color(x, y):
-        return pincel == cv2.circle(img, (xi, yi), 15, (255, 255, 255), cv2.FILLED)
+    rojo = cv2.circle(img, (1200, 70), 25, (0, 0, 255), cv2.FILLED)
 
     if resultado.multi_hand_landmarks:
         for h, handLms in enumerate(resultado.multi_hand_landmarks):
@@ -72,10 +69,6 @@ while True:
             
             for punto in puntos_dibujo:
                 cv2.circle(img, punto, 10, (255, 0, 255), cv2.FILLED)
-
-            if xm == 50 and ym == 50:
-                color(xm, ym)
- 
 
 
             
